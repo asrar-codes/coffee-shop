@@ -1,0 +1,158 @@
+@media (max-width: 350px) {
+  .slider {
+    height: calc(100vh - 30rem);
+  }
+}
+@media (max-width: 430px) {
+  .slider {
+    height: calc(100vh - 20rem);
+  }
+  .details-img-container {
+    height: 30%;
+  }
+  .details-img-container img {
+    object-fit: cover;
+    height: 100%;
+  }
+  .next-btn,
+  .prev-btn i {
+    font-size: 3.2rem;
+    color: white;
+  }
+}
+
+@media (max-width: 860px) {
+  .details-img {
+    height: 40vh;
+    border: 3px solid rgb(14, 18, 243);
+  }
+}
+@media (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .logo {
+    font-size: 3.5rem;
+  }
+  .showham {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.5s ease-in;
+  }
+  .nav-links {
+    width: 100%;
+    height: 0;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .nav-links li a {
+    font-size: 2.5rem;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .nav-links.active {
+    /* display: flex; */
+    height: 15rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+  }
+  .menu-container {
+    grid-template-columns: 1fr;
+    width: 95%;
+  }
+  .img-container {
+    min-height: 300px;
+  }
+  .menu-text div h3 {
+    font-size: 2rem;
+  }
+  .menu-text p {
+    font-size: 1.7rem;
+  }
+
+  .details {
+    display: grid;
+    align-items: center;
+    height: 30vh;
+    padding: 1.5rem;
+  }
+
+  .details-img {
+    display: flex;
+    flex-direction: column;
+    /* height: 60vh; */
+    /* border: 3px solid red; */
+    gap: 1rem;
+  }
+  .details-text {
+    padding: 0;
+    /* height: 35%; */
+    height: min-content;
+    /* border: 5px solid green; */
+  }
+
+  .details-img-container {
+    width: 100%;
+    height: 69%;
+
+    justify-self: center;
+    padding: 0;
+    /* border: 5px solid purple; */
+  }
+  .details-img-container img {
+    object-position: center;
+    height: 100%;
+  }
+  .book-table {
+    /* margin-top: 1rem; */
+    height: min-content;
+    padding: 1.5rem;
+  }
+  /* .book-table h1 {
+    font-size: 2.5rem;
+  } */
+  .book-table p {
+    font-size: 2.5rem;
+  }
+  .book-table-btn {
+    font-size: 2.5rem;
+  }
+  .footer {
+    margin-top: 0.5rem;
+    height: min-content;
+    padding: 0.5rem;
+  }
+  .footer-details {
+    height: 50%;
+  }
+  .social {
+    padding: 0.5rem;
+    margin-top: 3rem;
+    align-items: flex-end;
+  }
+  /* .social li a {
+    font-size: 2.5rem;
+  } */
+  .adress,
+  .opening-hours {
+    padding: 0.8rem;
+  }
+  .contact {
+    padding: 0.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .details {
+    padding: 1.5rem;
+  }
+  .details-img-container {
+    width: 80%;
+    height: 90%;
+  }
+}
