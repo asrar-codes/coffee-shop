@@ -45,7 +45,8 @@ let index = 0;
 nextBtn.addEventListener("click", NextSlide);
 
 function NextSlide(e) {
-  index++;
+  console.log(e);
+  index = index + 1;
   if (index > slideArr.length - 1) {
     index = 0;
   }
@@ -54,7 +55,7 @@ function NextSlide(e) {
 
 prevBtn.addEventListener("click", PrevSlide);
 function PrevSlide() {
-  index--;
+  index = index - 1;
   if (index < 0) {
     return (index = slideArr.length - 1);
   }
