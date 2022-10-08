@@ -31,13 +31,11 @@ const menuDOM = document.querySelector(".menu-container");
 // console.log(slideDOM);
 
 const slideArr = [
-  "/images//img1.jpg",
-  "/images//img2.jpg",
-  "/images//img3.jpg",
-  "/images//img4.jpg",
-  "/images//img5.jpg",
-  "/images//img6.jpg",
-  "/images//img8.jpg",
+  "https://images.pexels.com/photos/13737042/pexels-photo-13737042.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.unsplash.com/photo-1522992319-0365e5f11656?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
+
+  "https://images.pexels.com/photos/2074130/pexels-photo-2074130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/175711/pexels-photo-175711.jpeg?auto=compress&cs=tinysrgb&w=600",
 ];
 // console.log(slideArr.length);
 let index = 0;
