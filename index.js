@@ -41,16 +41,15 @@ const slideArr = [
 ];
 // console.log(slideArr.length);
 let index = 0;
-let interval;
 
 nextBtn.addEventListener("click", NextSlide);
 
-function NextSlide() {
+function NextSlide(e) {
   index++;
   if (index > slideArr.length - 1) {
     index = 0;
   }
-  imageDOM.src = `${slideArr[index]}`;
+  return (imageDOM.src = `${slideArr[index]}`);
 }
 
 prevBtn.addEventListener("click", PrevSlide);
@@ -59,7 +58,7 @@ function PrevSlide() {
   if (index < 0) {
     return (index = slideArr.length - 1);
   }
-  imageDOM.src = `${slideArr[index]}`;
+  return (imageDOM.src = `${slideArr[index]}`);
 }
 
 // <<============= slider end >>==============>>
