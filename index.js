@@ -48,7 +48,7 @@ function NextSlide(e) {
   console.log(e);
   index = index + 1;
   if (index > slideArr.length - 1) {
-    index = 0;
+    return (index = 0);
   }
   return (imageDOM.src = `${slideArr[index]}`);
 }
