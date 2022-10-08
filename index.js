@@ -43,9 +43,7 @@ const slideArr = [
 let index = 0;
 let interval;
 
-nextBtn.addEventListener("click", () => {
-  NextSlide();
-});
+nextBtn.addEventListener("click", NextSlide);
 
 function NextSlide() {
   index++;
@@ -55,10 +53,7 @@ function NextSlide() {
   imageDOM.src = `${slideArr[index]}`;
 }
 
-prevBtn.addEventListener("click", () => {
-  clearInterval(interval);
-  PrevSlide();
-});
+prevBtn.addEventListener("click", PrevSlide);
 function PrevSlide() {
   index--;
   if (index < 0) {
